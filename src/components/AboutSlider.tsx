@@ -18,6 +18,9 @@ interface AboutSlide {
 export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
   return (
     <section id="who-we-are" className="about-section">
+      <div className="container">
+        <div className="row">
+          <div className="col">
       <div className="about-slider-container">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
@@ -34,11 +37,11 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
         >
           {slides?.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="about-slide">
+              <div className="about-slide d-flex justify-content-between">
                 <div className="about-content">
-                  <h1 className="main-title">{slide.main_headig}</h1>
-                  <h2 className="about-heading">{slide.heading}</h2>
-                  <p className="about-paragraph">{slide.paragrapgh}</p>
+                  <h1 className="main-title m-0">{slide.main_headig}</h1>
+                  <h2 className="about-heading m-0">{slide.heading}</h2>
+                  <p className="about-paragraph m-0">{slide.paragrapgh}</p>
                 </div>
                 <div className="about-image-container">
                   <img
@@ -51,6 +54,9 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -10,8 +10,11 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="header-container">
-        <a href="/" className="logo-link">
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div className="d-flex align-items-center justify-content-between">
+            <a href="/" className="logo-link">
           <img
             src="/assets/images/atpl_logo.svg"
             alt="Altruist Logo"
@@ -31,20 +34,23 @@ const Header: React.FC = () => {
         </button>
 
         {/* Navigation Menu */}
-        <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-          <a href="#who-we-are" className="nav-link" onClick={toggleMenu}>
+        <nav className={`nav-menu d-flex ${isMenuOpen ? "active" : ""}`}>
+          <a href="#who-we-are" className="nav-link text-white" onClick={toggleMenu}>
             Who We Are
           </a>
-          <a href="#what-we-do" className="nav-link" onClick={toggleMenu}>
+          <a href="#what-we-do" className="nav-link text-white" onClick={toggleMenu}>
             What We Do
           </a>
-          <a href="#our-work" className="nav-link" onClick={toggleMenu}>
+          <a href="#our-work" className="nav-link text-white" onClick={toggleMenu}>
             Our Work
           </a>
-          <a href="#contact-us" className="nav-link" onClick={toggleMenu}>
+          <a href="#contact-us" className="nav-link text-white" onClick={toggleMenu}>
             Contact Us
           </a>
         </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );
