@@ -1,0 +1,25 @@
+import React from "react";
+import { getData } from "@/service/sheetService";
+import { HOME_ID } from "@/config/constant";
+
+export default async function ServicesSection() {
+  const quoteData = await getData(HOME_ID);
+  const data = quoteData?.what_we_do?.[0] || {};
+
+  return (
+    <section id="what-we-do" className="services-section">
+      <div className="services-container">
+        <h2 className="services-title">{data.title}</h2>
+        <div className="services-content">
+          {data.description
+            .split("\r\n\r\n")
+            .map((paragraph: string, index: number) => (
+              <p key={index} className="services-paragraph">
+                {paragraph}
+              </p>
+            ))}
+        </div>
+      </div>
+    </section>
+  );
+}
