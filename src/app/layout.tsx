@@ -23,12 +23,14 @@ export default function RootLayout({
           property="og:image"
           content="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742387881498altruist-logo.png"
         />
+             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous"/>
+
       </head>
-      <body id="google-doc-content">
+      <body className='m-0' id="google-doc-content">
         <section className="data">
-          <div className="container-fluid">
-            <div className="row flex-column-reverse flex-md-row">
-              <div className="col-md-7">
+          <div className="container-fluid px-0">
+            <div className="ro flex-column-revers flex-md-ro">
+              <div className="col-md-">
                 <Header />
                 <div className="box">
                   {children}

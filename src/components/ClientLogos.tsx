@@ -52,7 +52,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
 
   return (
     <section className="partners-section">
-      <div className="partners-container">
+      <div className="partners-containe unique_containe slider-container">
         <Slider {...settings}>
           {clients.map((client, index) => (
             <div key={index} className="partner-slide">

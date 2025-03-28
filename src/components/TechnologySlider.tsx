@@ -34,8 +34,8 @@ export default function TechnologySlider({
   console.log("slides", slides);
   return (
     <section className="technology-section">
-      <div className="slider-container">
-        <div className="route-navigation">
+      
+        <div className="route-navigation border-bottom o_auto d-block text-nowrap text-center">
           {slides.map((slide, index) => (
             <button
               key={index}
@@ -48,7 +48,7 @@ export default function TechnologySlider({
             </button>
           ))}
         </div>
-
+        <div className="slider-container unique_containe what_reach_work d-block py- pb-0">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={50}
@@ -70,10 +70,10 @@ export default function TechnologySlider({
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="slide-content">
+              <div className="slide-conten slidr_parnt_box">
                 <div className="text-content">
                   <span className="country-tag">{slide.country}</span>
-                  <h2 className="company-name">{slide.name}</h2>
+                  <h2 className="company-name scrolling_heading">{slide.name}</h2>
                   <p className="description">{slide.about}</p>
                   <a
                     href={slide.link}
@@ -101,11 +101,12 @@ export default function TechnologySlider({
                   </a>
                 </div>
                 <div className="logo-container1">
+                  <div className="slider_hover_image">
                   <img
                     src={slide.logoUrl}
                     alt={`${slide.name} Logo`}
-                    className="company-logo"
-                  />
+                    className="company-logo sliding_image"
+                  /></div>
                 </div>
               </div>
             </SwiperSlide>

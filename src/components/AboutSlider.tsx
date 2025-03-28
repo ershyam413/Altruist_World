@@ -17,8 +17,8 @@ interface AboutSlide {
 
 export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
   return (
-    <section id="who-we-are" className="about-section">
-      <div className="about-slider-container">
+    <section id="who-we-are" className="about-section py- px-0 pb-0">
+      <div className="about-slider-containe slider-container pb-0">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={50}
@@ -33,19 +33,20 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
           }}
         >
           {slides?.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className="about-slide">
+            <SwiperSlide className='px-' key={index}>
+            <h1 className="main-title text-start m-0 mb-3">{slide.main_headig}</h1>
+              <div className="about-slid slidr_parnt_box px-0">
                 <div className="about-content">
-                  <h1 className="main-title">{slide.main_headig}</h1>
-                  <h2 className="about-heading">{slide.heading}</h2>
-                  <p className="about-paragraph">{slide.paragrapgh}</p>
+                  <h2 className="about-heading scrolling_heading m-0">{slide.heading}</h2>
+                  <p className="about-paragrap description m-0">{slide.paragrapgh}</p>
                 </div>
                 <div className="about-image-container">
+                  <div className="slider_hover_image">
                   <img
                     src={slide.imageUrl}
                     alt={`${slide.heading} Illustration`}
-                    className="about-image"
-                  />
+                    className="about-image sliding_image rounded-0"
+                  /></div>
                 </div>
               </div>
             </SwiperSlide>

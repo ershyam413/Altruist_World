@@ -105,8 +105,8 @@ const ContactUsForm: React.FC = () => {
   };
 
   return (
-    <div className="form-container">
-      <form onSubmit={handleSubmit} className="contact-form">
+    <div className="form-containe unique_container">
+      <form onSubmit={handleSubmit} className="contact-form mx-auto">
         <div className="form-group">
           <label htmlFor="fullName">Full Name</label>
           <input

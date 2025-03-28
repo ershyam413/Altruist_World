@@ -9,8 +9,8 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="header">
-      <div className="header-container">
+    <header className="header p-0">
+      <div className="header-containe unique_container d-flex justify-content-between py-md-3 py-2">
         <a href="/" className="logo-link">
           <img
             src="/assets/images/atpl_logo.svg"

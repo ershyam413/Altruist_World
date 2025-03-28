@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className="footer border-top">
+      <div className="footer-containe unique_container d-flex flex-column align-items-center gap-3 py-3">
         <div className="social-links">
           <a href="#" className="social-link" aria-label="Facebook">
             <img

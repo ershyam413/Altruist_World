@@ -44,11 +44,12 @@ const CounterItem = ({ end, suffix, label, icon }: CounterItemProps) => {
       <div className="counter-icon">
         <img src={icon} alt={label} />
       </div>
-      <div className="counter-value">
-        {count}
-        {suffix}+
-      </div>
-      <div className="counter-label">{label}</div>
+      <p className="counter-value d-block m-0 mt-1">
+        {count}+
+        {/* {suffix}+ */}
+        &nbsp;<span className="counter-label">{label}</span>
+      </p>
+      {/* <div className="counter-label">{label}</div> */}
     </div>
   );
 };
@@ -57,8 +58,9 @@ export default async function Counter({ quoteData }: { quoteData: any }) {
   const counterData = quoteData;
 
   return (
-    <section className="counter-section">
-      <div className="counter-container">
+    <section className="counter-section py-0">
+      <section className="counter_box w-100 flex-wrap counter-containe unique_container d-flex py-">
+      {/* <div className="counter_row"> */}
         {counterData?.map((item: any, index: any) => (
           <CounterItem
             key={index}
@@ -68,7 +70,8 @@ export default async function Counter({ quoteData }: { quoteData: any }) {
             icon={item.icon}
           />
         ))}
-      </div>
+      {/* </div> */}
+    </section>
     </section>
   );
 }
