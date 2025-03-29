@@ -40,7 +40,7 @@ const CounterItem = ({ end, suffix, label, icon }: CounterItemProps) => {
   }, [inView, end]);
 
   return (
-    <div className="counter-item" ref={ref}>
+    <div className="counter-item p-xl-4" ref={ref}>
       <div className="counter-icon">
         <img src={icon} alt={label} />
       </div>

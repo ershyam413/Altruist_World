@@ -153,15 +153,16 @@ const ContactUsForm: React.FC = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="inquireAbout">Inquire About</label>
+          {/* <label htmlFor="inquireAbout">Inquire About</label> */}
           <select
             id="inquireAbout"
             name="inquireAbout"
             value={formData.inquireAbout}
             onChange={handleChange}
-            className={errors.inquireAbout ? "error" : ""}
+            // className={errors.inquireAbout ? "error" : ""}
+            className='form-select'
           >
-            <option value="">Select an option</option>
+            <option value="">Inquire About</option>
             <option value="technology">Technology</option>
             <option value="marketing">Marketing & Advertising</option>
             <option value="lastMile">Last Mile</option>
@@ -174,7 +175,7 @@ const ContactUsForm: React.FC = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Message</label>
+          {/* <label htmlFor="message">Message</label> */}
           <textarea
             id="message"
             name="message"

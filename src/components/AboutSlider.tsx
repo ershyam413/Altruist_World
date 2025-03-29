@@ -18,8 +18,8 @@ interface AboutSlide {
 export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
   return (
     <section id="who-we-are" className="about-section py- px-0 pb-0">
-      <div className="about-slider-containe slider-container pb-0">
-        <Swiper
+      <div className="about-slider-containe slider-container unique_container pb-">
+        <Swiper className='pb-0'
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={50}
           slidesPerView={1}
@@ -36,11 +36,11 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
             <SwiperSlide className='px-' key={index}>
             <h1 className="main-title text-start m-0 mb-3">{slide.main_headig}</h1>
               <div className="about-slid slidr_parnt_box px-0">
-                <div className="about-content">
+                <div className="about-conten text-content">
                   <h2 className="about-heading scrolling_heading m-0">{slide.heading}</h2>
                   <p className="about-paragrap description m-0">{slide.paragrapgh}</p>
                 </div>
-                <div className="about-image-container">
+                <div className="about-image-containe logo-container1">
                   <div className="slider_hover_image">
                   <img
                     src={slide.imageUrl}

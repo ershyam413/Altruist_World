@@ -19,6 +19,7 @@ export default function RootLayout({
         <link rel="icon" href="/assets/images/favicon_02.svg" />
         <link rel="shortcut icon" href="/assets/images/favicon_02.svg" />
         <link rel="apple-touch-icon" href="/assets/images/favicon_02.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:image"
           content="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742387881498altruist-logo.png"

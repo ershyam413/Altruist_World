@@ -48,7 +48,7 @@ export default function TechnologySlider({
             </button>
           ))}
         </div>
-        <div className="slider-container unique_containe what_reach_work d-block py- pb-0">
+        <div className="slider-container unique_container what_reach_work d-block py- pb-0">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={50}

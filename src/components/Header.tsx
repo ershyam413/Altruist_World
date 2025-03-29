@@ -10,12 +10,12 @@ const Header: React.FC = () => {
 
   return (
     <header className="header p-0">
-      <div className="header-containe unique_container d-flex justify-content-between py-md-3 py-2">
+      <div className="header-containe unique_container d-flex flex-wrap align-items-center justify-content-between gap-2 py-md-4 py-2">
         <a href="/" className="logo-link">
           <img
             src="/assets/images/atpl_logo.svg"
             alt="Altruist Logo"
-            className="logo"
+            className="logo w-100"
           />
         </a>
 
