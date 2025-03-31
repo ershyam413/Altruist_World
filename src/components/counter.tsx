@@ -44,7 +44,7 @@ const CounterItem = ({ end, suffix, label, icon }: CounterItemProps) => {
       <div className="counter-icon">
         <img src={icon} alt={label} />
       </div>
-      <p className="counter-value d-block m-0 mt-1">
+      <p className="counter-value d-block m-0 mt-3">
         {count}+
         {/* {suffix}+ */}
         &nbsp;<span className="counter-label">{label}</span>

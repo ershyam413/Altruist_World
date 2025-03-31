@@ -160,7 +160,7 @@ const ContactUsForm: React.FC = () => {
             value={formData.inquireAbout}
             onChange={handleChange}
             // className={errors.inquireAbout ? "error" : ""}
-            className='form-select'
+            className='form-select rounded-0'
           >
             <option value="">Inquire About</option>
             <option value="technology">Technology</option>
@@ -191,7 +191,7 @@ const ContactUsForm: React.FC = () => {
 
         <div className="form-group checkbox-group">
           <label className="checkbox-label">
-            <input
+            <input className="rounded-0"
               type="checkbox"
               name="acceptTerms"
               checked={formData.acceptTerms}
@@ -209,7 +209,7 @@ const ContactUsForm: React.FC = () => {
           )}
         </div>
 
-        <button type="submit" className="submit-button" disabled={isSubmitting}>
+        <button type="submit" className="submit-button rounded-0" disabled={isSubmitting}>
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>

@@ -76,9 +76,9 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
         </Slider> */}
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-indicators mb-0">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active mx-0" aria-current="true" aria-label="Slide 1"></button>
+    <button  className="mx-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button  className="mx-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div className="carousel-inner partner_carousel text-center pb-5">
     <div className="carousel-item active">
@@ -86,7 +86,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                         <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -95,7 +95,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -104,7 +104,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -113,7 +113,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -122,7 +122,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -131,7 +131,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -140,7 +140,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -149,7 +149,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -162,7 +162,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                         <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -171,7 +171,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -180,7 +180,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -189,7 +189,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -198,7 +198,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -207,7 +207,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -216,7 +216,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -225,7 +225,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -238,7 +238,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                         <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -247,7 +247,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -256,7 +256,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -265,7 +265,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -274,7 +274,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -283,7 +283,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -292,7 +292,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>
@@ -301,7 +301,7 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                           <div className="col-3">
                           <img src="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742444872590Rectangle_9_(1).png" className="d-block w-100" alt="..."/>
                             <h3 className="partner-name my-md-3 my-2">Three</h3>
-                            <div className='d-flex flex-wrap gap-md-3 gap-2 align-items-center justify-content-center social_icns'>
+                            <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Facebook.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/Linkedin.png"/>
                               <img className="social-link img-fluid d-block" src="http://localhost:8095/assets/images/X.png"/>

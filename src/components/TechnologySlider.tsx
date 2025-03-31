@@ -35,7 +35,7 @@ export default function TechnologySlider({
   return (
     <section className="technology-section">
       
-        <div className="route-navigation border-bottom o_auto d-block text-nowrap text-center">
+        <div className="route-navigation border-botto o_auto d-block text-nowrap text-center">
           {slides.map((slide, index) => (
             <button
               key={index}
@@ -77,13 +77,13 @@ export default function TechnologySlider({
                   <p className="description">{slide.about}</p>
                   <a
                     href={slide.link}
-                    className="visit-link"
+                    className="visit-link flex-wrap"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Visit {slide.name.split("\r\n")[0]}
                     <svg
-                      className="arrow-icon"
+                      className="arrow-icon text-white"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
