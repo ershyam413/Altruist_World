@@ -3309,3 +3309,11 @@ input, select, textarea, .form-select{
 }
 }
 /*--x-25/03/2025-x--*/
+
+.main-title span {
+  transition: color 0.3s ease;
+}
+
+.about-heading {
+  transition: color 0.3s ease;
+}

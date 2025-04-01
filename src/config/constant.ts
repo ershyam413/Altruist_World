@@ -9,3 +9,4 @@ export const SHEET_POST_URL =
 
 export const HOME_ID = "1t1Ab3wgUqt1O4XOa8vJ8vnV8AfHoKOAUfGgcUro_z2E";
 export const SEO_SHEET_ID = "1N0t1tFwtgVZzbFv7pEjDwNt111KAP0cAwEVC2RMKfRs";
+export const HASHING_KEY = "GsLosE/zMIWiSb77H6jE/KfDXq+ZilxU";
