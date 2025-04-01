@@ -10,7 +10,7 @@ export default async function ContactSection() {
   return (
     <section id="contact-us" className="contact-section">
       <section className="reach_out">
-      <div className="reach-out-containe unique_container what_reach_work">
+      <div className="reach-out-containe unique_container container what_reach_work">
         <h2 className="title">{reachOut.title}</h2>
         <p className="reach-out-descriptio description p-0">{reachOut.description}</p>
       </div></section>

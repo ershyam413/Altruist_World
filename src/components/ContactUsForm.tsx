@@ -333,7 +333,7 @@ const ContactUsForm: React.FC = () => {
   };
 
   return (
-    <div className="form-containe unique_container">
+    <div className="form-containe unique_container container">
       <form onSubmit={handleSubmit} className="contact-form mx-auto">
         <div className="form-group">
           <label htmlFor="fullName">Full Name <span style={{color: 'red'}}>*</span></label>
@@ -436,7 +436,7 @@ const ContactUsForm: React.FC = () => {
 
         <div className="form-group checkbox-group">
           <label className="checkbox-label">
-            <input
+            <input className="rounded-0"
               type="checkbox"
               name="acceptTerms"
               checked={formData.acceptTerms}
@@ -454,7 +454,7 @@ const ContactUsForm: React.FC = () => {
           )}
         </div>
 
-        <button type="submit" className="submit-button" disabled={isSubmitting}>
+        <button type="submit" className="submit-button rounded-0 mt-3" disabled={isSubmitting}>
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>

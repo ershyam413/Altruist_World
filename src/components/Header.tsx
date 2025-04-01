@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="header p-0">
-      <div className="header-containe unique_container d-flex flex-wrap align-items-center justify-content-between gap-2 py-md-4 py-2">
+      <div className="header-containe unique_container container d-flex flex-wrap align-items-center justify-content-between gap-2 py-md-4 py-2">
         <a href="/" className="logo-link">
           <img
             src="/assets/images/atpl_logo.svg"
@@ -32,16 +32,16 @@ const Header: React.FC = () => {
 
         {/* Navigation Menu */}
         <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-          <a href="#who-we-are" className="nav-link" onClick={toggleMenu}>
+          <a href="#who-we-are" className="nav-link px-0 pt-0" onClick={toggleMenu}>
             Who We Are
           </a>
-          <a href="#what-we-do" className="nav-link" onClick={toggleMenu}>
+          <a href="#what-we-do" className="nav-link px-0 pt-0" onClick={toggleMenu}>
             What We Do
           </a>
-          <a href="#our-work" className="nav-link" onClick={toggleMenu}>
+          <a href="#our-work" className="nav-link px-0 pt-0" onClick={toggleMenu}>
             Our Work
           </a>
-          <a href="#contact-us" className="nav-link" onClick={toggleMenu}>
+          <a href="#contact-us" className="nav-link px-0 pt-0" onClick={toggleMenu}>
             Contact Us
           </a>
         </nav>

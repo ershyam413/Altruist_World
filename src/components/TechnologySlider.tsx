@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
+// import iconImage from '../../public/assets/images/icon.png';
+// import iconImage from './../../public/assets/images/icon.png';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -35,11 +37,11 @@ export default function TechnologySlider({
   return (
     <section className="technology-section">
       
-        <div className="route-navigation border-bottom o_auto d-block text-nowrap text-center">
+        <div className="container unique_container route-navigation border-botto o_auto d-block text-nowrap text-center">
           {slides.map((slide, index) => (
             <button
               key={index}
-              className={`route-button ${
+              className={`route-button py-0 ${
                 index === activeIndex ? "active" : ""
               }`}
               onClick={() => handleRouteClick(index)}
@@ -48,7 +50,7 @@ export default function TechnologySlider({
             </button>
           ))}
         </div>
-        <div className="slider-container unique_container what_reach_work d-block py- pb-0">
+        <div className="slider-container unique_container container what_reach_wor d-block py- pb-lg- pb-">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={50}
@@ -77,13 +79,13 @@ export default function TechnologySlider({
                   <p className="description">{slide.about}</p>
                   <a
                     href={slide.link}
-                    className="visit-link"
+                    className="visit-link flex-wrap"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Visit {slide.name.split("\r\n")[0]}
-                    <svg
-                      className="arrow-icon"
+                    {/* <svg
+                      className="arrow-icon text-white"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -97,7 +99,11 @@ export default function TechnologySlider({
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
-                    </svg>
+                    </svg> */}
+                    <i className="fas fa-angle-right text-white fs-6 mt-2 mb-auto"></i>
+                    {/* <img className="img-fluid d-block icon_image" src={iconImage} alt="Icon Image" /> */}
+                    {/* <span>&gt;</span> */}
+                    {/* <i className="fas fa-chevron-right text-white"></i> */}
                   </a>
                 </div>
                 <div className="logo-container1">
