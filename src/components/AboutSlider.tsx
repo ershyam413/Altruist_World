@@ -55,7 +55,7 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
     const altruistIndex = words.findIndex(word => word.toLowerCase() === 'altruist');
   
     if (altruistIndex !== -1) {
-      let altruist = words[altruistIndex];
+      const altruist = words[altruistIndex];
       
       // Choose the character to color based on the slideIndex
       const characterToColor = slideIndex % altruist.length; // This will cycle through the characters of 'altruist'
