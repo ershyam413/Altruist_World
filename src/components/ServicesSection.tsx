@@ -8,13 +8,13 @@ export default async function ServicesSection() {
 
   return (
     <section id="what-we-do" className="services-section">
-      <div className="services-container">
-        <h2 className="services-title">{data.title}</h2>
-        <div className="services-content">
+      <div className="services-containe what_reach_work unique_container container align-items-center">
+        <h2 className="services-titl title">{data.title}</h2>
+        <div className="services-conten description p-0">
           {data.description
             .split("\r\n\r\n")
             .map((paragraph: string, index: number) => (
-              <p key={index} className="services-paragraph">
+              <p key={index} className="services-paragraph description">
                 {paragraph}
               </p>
             ))}
