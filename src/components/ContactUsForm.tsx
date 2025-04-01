@@ -105,7 +105,7 @@ const ContactUsForm: React.FC = () => {
   };
 
   return (
-    <div className="form-containe unique_container">
+    <div className="form-containe unique_container container">
       <form onSubmit={handleSubmit} className="contact-form mx-auto">
         <div className="form-group">
           <label htmlFor="fullName">Full Name</label>
@@ -174,7 +174,7 @@ const ContactUsForm: React.FC = () => {
           )}
         </div>
 
-        <div className="form-group">
+        <div className="form-group mt-4">
           {/* <label htmlFor="message">Message</label> */}
           <textarea
             id="message"
@@ -209,7 +209,7 @@ const ContactUsForm: React.FC = () => {
           )}
         </div>
 
-        <button type="submit" className="submit-button rounded-0" disabled={isSubmitting}>
+        <button type="submit" className="submit-button rounded-0 mt-3" disabled={isSubmitting}>
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>

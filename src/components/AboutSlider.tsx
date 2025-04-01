@@ -18,7 +18,7 @@ interface AboutSlide {
 export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
   return (
     <section id="who-we-are" className="about-section py- px-0 pb-0">
-      <div className="about-slider-containe slider-container unique_container pb-">
+      <div className="about-slider-containe slider-container unique_container container pb-">
         <Swiper className='pb-0'
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={50}
