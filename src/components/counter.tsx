@@ -40,11 +40,11 @@ const CounterItem = ({ end, suffix, label, icon }: CounterItemProps) => {
   }, [inView, end]);
 
   return (
-    <div className="counter-item p-xl- flex-column d-flex justify-content-between" ref={ref}>
+    <div className="counter-item p-xl- flex-sm-column d-flex align-items-sm-start align-items-center justify-content-sm-between gap-" ref={ref}>
       <div className="counter-icon">
         <img src={icon} alt={label} />
       </div>
-      <p className="counter-value d-block m-0 mt-3">
+      <p className="counter-value d-block w-100 m-0 mt-">
         <span>{count}+</span>
         {/* {suffix}+ */}
         &nbsp;<span className="counter-label">{label}</span>

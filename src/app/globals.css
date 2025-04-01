@@ -1973,7 +1973,7 @@ body{
   }
 
   .scrolling_heading {
-    font-size: 3rem;
+    font-size: 45px;
   }
 }
 
@@ -2216,7 +2216,10 @@ body{
   /* width: 100%; */
   /* margin: 0 auto; */
   gap: 20px;
-  padding: 1rem 15px;
+  /* padding: 40px 15px; */
+}
+.unique_container.container{
+  padding: 40px 20px;
 }
 
 .services-content {
@@ -2418,6 +2421,7 @@ body{
   padding: 0.8rem 1.3rem;
   padding: 24px 31px;
   transition: transform 0.3s ease;
+  gap: 20.82px;
 }
 
 .counter-item:hover {
@@ -2497,7 +2501,7 @@ body{
   } */
 
   .counter-value {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
 
   .counter-label {
@@ -3030,7 +3034,7 @@ body.menu-open {
   flex-direction: column;
 }
 .contact-form{
-  width: 290px;
+  width: 280px;
 }
 .services-paragraph.description:not(:first-child){
   margin-top: 1rem;
@@ -3082,8 +3086,8 @@ opacity: 1;
 gap: 16px;
 }
 .partner_carousel .social_icns{
-  /* gap: 9px; */
-  gap: 0.469vw;
+  gap: 9px;
+  /* gap: 0.469vw; */
 }
 .technology-section .slider_hover_image{
   width: 100%
@@ -3187,16 +3191,9 @@ gap: 16px;
 }
 @media(min-width:1400px){
   .unique_container.container {
-    /* max-width: 1264px; */
     padding-left: 100px;
     padding-right: 100px;
     max-width: 100%;
-  }
-  .unique_container.container{
-    /* padding-left: 0;
-    padding-right: 0; */
-    /* max-width: 1264px; */
-    
   }
   .header > .unique_container{
     min-height: 106.26px;
@@ -3227,15 +3224,11 @@ gap: 16px;
   #our-work .unique_container.container{
     padding-bottom: 40px !important;
   }
+  .counter-item{
+    font-size: 14px;
+  }
 }
 @media(min-width:1450px){
-  .unique_container.container{
-    /* padding-left: 9rem;
-    padding-right: 9rem; */
-    /* padding-left: 6vw;
-    padding-right: 6vw;
-    max-width: 100%; */
-  }
   .slider_hover_image{
     width: 76%;
   }
@@ -3273,9 +3266,6 @@ input, select, textarea, .form-select{
   width: 42.708vw;
 }
 }
-/* @media (min-width:1400px){
-  
-} */
 @media(max-width:1279px){
   .description{
     font-size: 1rem;
@@ -3313,6 +3303,9 @@ input, select, textarea, .form-select{
 }
 .partner_carousel .social-link {
   width: 3.5vw;
+}
+.counter-icon img {
+  width: 40.95px;
 }
 }
 /*--x-25/03/2025-x--*/
