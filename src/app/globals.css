@@ -2260,6 +2260,7 @@ body {
   padding: 0.8rem 1.3rem;
   padding: 24px 31px;
   transition: transform 0.3s ease;
+  gap: 0px !important;
 }
 
 .counter-item:hover {
@@ -2798,7 +2799,7 @@ body.menu-open {
 
 @media (min-width: 1200px) {
   .unique_container {
-    padding: 50px 100px;
+    padding: 50px 100px !important;
   }
 }
 /* @media (min-width:1400px){
