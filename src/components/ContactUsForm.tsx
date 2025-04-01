@@ -359,7 +359,7 @@ const ContactUsForm: React.FC = () => {
             value={formData.mobileNumber}
             onChange={handleMobileNumberChange}
             className={errors.mobileNumber ? "error" : ""}
-            placeholder="Enter 10 digit mobile number"
+            placeholder=""
             maxLength={10}
             pattern="[6-9][0-9]{9}"
             title="Please enter valid Indian mobile number"
@@ -420,7 +420,7 @@ const ContactUsForm: React.FC = () => {
           )}
         </div>
 
-        <div className="form-group">
+        <div className="form-group mt-4 pt-2">
           <textarea
             id="message"
             name="message"
