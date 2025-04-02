@@ -106,7 +106,7 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
           {slides?.map((slide, index) => (
             <SwiperSlide className='px-' key={index}>
               <h1 
-                className="main-title text-start m-0 mb-3"
+                className="main-title text-start m-0 mb-md-3 mb-2"
                 dangerouslySetInnerHTML={{ 
                   __html: getColoredHeading(slide.main_headig, slide.heading, index) 
                 }}

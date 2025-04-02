@@ -25,23 +25,24 @@ const Header: React.FC = () => {
           onClick={toggleMenu}
           aria-label="Menu"
         >
+          {/* <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span> */}
+          <img src="/assets/icons/hamburger.svg" alt="hamburger" />
         </button>
 
         {/* Navigation Menu */}
         <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-          <a href="#who-we-are" className="nav-link px-0 pt-0" onClick={toggleMenu}>
+          <a href="#who-we-are" className="nav-link p-0" onClick={toggleMenu}>
             Who We Are
           </a>
-          <a href="#what-we-do" className="nav-link px-0 pt-0" onClick={toggleMenu}>
+          <a href="#what-we-do" className="nav-link p-0" onClick={toggleMenu}>
             What We Do
           </a>
-          <a href="#our-work" className="nav-link px-0 pt-0" onClick={toggleMenu}>
+          <a href="#our-work" className="nav-link p-0" onClick={toggleMenu}>
             Our Work
           </a>
-          <a href="#contact-us" className="nav-link px-0 pt-0" onClick={toggleMenu}>
+          <a href="#contact-us" className="nav-link p-0" onClick={toggleMenu}>
             Contact Us
           </a>
         </nav>
