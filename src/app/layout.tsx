@@ -16,16 +16,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/images/favicon_02.svg" />
-        <link rel="shortcut icon" href="/assets/images/favicon_02.svg" />
-        <link rel="apple-touch-icon" href="/assets/images/favicon_02.svg" />
+        <link rel="icon" href="/assets/images/atpl_logo.svg" sizes="any" />
+        <link rel="shortcut icon" href="/assets/images/atpl_logo.svg" sizes="any" />
+        <link rel="apple-touch-icon" href="/assets/images/atpl_logo.svg" sizes="any" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:image"
           content="https://apicitiplaza.altruistindia.com///uploads/altruist_world/1742387881498altruist-logo.png"
         />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
 
       </head>
       <body className='m-0' id="google-doc-content">
