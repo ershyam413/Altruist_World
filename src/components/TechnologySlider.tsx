@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
@@ -16,6 +16,7 @@ interface CompanyData {
   link: string;
   logoUrl: string;
   routeName: string;
+  tabsName: string;
   country: string;
 }
 
@@ -24,33 +25,42 @@ export default function TechnologySlider({
 }: {
   slides: CompanyData[];
 }) {
-  const [activeIndex, setActiveIndex] = useState(0);
+  // Get unique tabsNames and filter out empty ones
+  const uniqueTabs = useMemo(() => {
+    const tabs = [...new Set(slides.map(slide => slide.tabsName))];
+    return tabs.filter(tab => tab.trim() !== "");
+  }, [slides]);
+
+  const [activeTab, setActiveTab] = useState(uniqueTabs[0]);
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
 
-  const handleRouteClick = (index: number) => {
+  // Filter slides based on active tab
+  const filteredSlides = useMemo(() => {
+    return slides.filter(slide => slide.tabsName === activeTab && slide.name !== "");
+  }, [slides, activeTab]);
+
+  const handleTabClick = (tab: string) => {
+    setActiveTab(tab);
     if (swiper) {
-      swiper.slideTo(index);
+      swiper.slideTo(0); // Reset to first slide when changing tabs
     }
-    setActiveIndex(index);
   };
-  console.log("slides", slides);
+
   return (
     <section className="technology-section">
+      <div className="container unique_container route-navigation border-botto o_auto d-block text-nowrap text-center">
+        {uniqueTabs.map((tab, index) => (
+          <button
+            key={index}
+            className={`route-button py-0 ${activeTab === tab ? "active" : ""}`}
+            onClick={() => handleTabClick(tab)}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
       
-        <div className="container unique_container route-navigation border-botto o_auto d-block text-nowrap text-center">
-          {slides.map((slide, index) => (
-            <button
-              key={index}
-              className={`route-button py-0 ${
-                index === activeIndex ? "active" : ""
-              }`}
-              onClick={() => handleRouteClick(index)}
-            >
-              {slide.routeName}
-            </button>
-          ))}
-        </div>
-        <div className="slider-container unique_container container what_reach_wor d-block py- pb-lg- pb-">
+      <div className="slider-container unique_container container what_reach_wor d-block py- pb-lg- pb-">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={50}
@@ -66,53 +76,35 @@ export default function TechnologySlider({
             disableOnInteraction: false,
           }}
           onSwiper={setSwiper}
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          initialSlide={activeIndex}
           className="technology-swiper"
         >
-          {slides.map((slide, index) => (
+          {filteredSlides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="slide-conten slidr_parnt_box">
                 <div className="text-content">
                   <span className="country-tag">{slide.country}</span>
                   <h2 className="company-name scrolling_heading">{slide.name}</h2>
                   <p className="description">{slide.about}</p>
-                  <a
-                    href={slide.link}
-                    className="visit-link flex-wrap"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit {slide.name.split("\r\n")[0]}
-                    {/* <svg
-                      className="arrow-icon text-white"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                  {slide.link && (
+                    <a
+                      href={slide.link}
+                      className="visit-link flex-wrap"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <path
-                        d="M5 12H19M19 12L12 5M19 12L12 19"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg> */}
-                    <i className="fas fa-angle-right text-white fs-6 mt-2 mb-auto"></i>
-                    {/* <img className="img-fluid d-block icon_image" src={iconImage} alt="Icon Image" /> */}
-                    {/* <span>&gt;</span> */}
-                    {/* <i className="fas fa-chevron-right text-white"></i> */}
-                  </a>
+                      Visit {slide.name.split("\r\n")[0]}
+                      <i className="fas fa-angle-right text-white fs-6 mt-2 mb-auto"></i>
+                    </a>
+                  )}
                 </div>
                 <div className="logo-container1">
                   <div className="slider_hover_image">
-                  <img
-                    src={slide.logoUrl}
-                    alt={`${slide.name} Logo`}
-                    className="company-logo sliding_image"
-                  /></div>
+                    <img
+                      src={slide.logoUrl}
+                      alt={`${slide.name} Logo`}
+                      className="company-logo sliding_image"
+                    />
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

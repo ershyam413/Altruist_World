@@ -3156,3 +3156,61 @@ body.menu-open {
     transform: translateX(0);
   }
 }
+
+
+
+
+
+/* slider css  */
+
+
+.route-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.route-button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  color: #faf4f4;
+  transition: all 0.3s ease;
+}
+
+.route-button.active {
+  color: #0066FF;
+  font-weight: 600;
+}
+
+.route-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0066FF;
+}
+
+.route-button:hover {
+  color: #0066FF;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .route-navigation {
+    gap: 10px;
+  }
+
+  .route-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+/* slider css  */

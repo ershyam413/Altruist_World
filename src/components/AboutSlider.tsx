@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import type { Swiper as SwiperType } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -16,46 +17,14 @@ interface AboutSlide {
 }
 
 export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
-  // const getColoredHeading = (mainHeading: string, slideHeading: string, slideIndex: number) => {
-  //   const words = mainHeading.split(' ');
-  //   const altruistIndex = words.findIndex(word => 
-  //     word.toLowerCase() === 'altruist'
-  //   );
-
-  //   if (altruistIndex !== -1) {
-  //     const altruist = words[altruistIndex];
-  //     const firstCharSlideHeading = slideHeading.charAt(0).toLowerCase();
-      
-  //     // Find all positions of the matching character
-  //     const positions: number[] = [];
-  //     altruist.split('').forEach((char, index) => {
-  //       if (char.toLowerCase() === firstCharSlideHeading) {
-  //         positions.push(index);
-  //       }
-  //     });
-
-  //     // Choose which occurrence to color based on slide index
-  //     const occurrenceToColor = slideIndex % positions.length;
-      
-  //     const coloredAltruist = altruist.split('').map((char, index) => {
-  //       if (char.toLowerCase() === firstCharSlideHeading && 
-  //           index === positions[occurrenceToColor]) {
-  //         return `<span style="color: #0066FF;">${char}</span>`;
-  //       }
-  //       return char;
-  //     }).join('');
-      
-  //     words[altruistIndex] = coloredAltruist;
-  //   }
-
-  //   return words.join(' ');
-  // };
+  const [activeIndex, setActiveIndex] = useState(0);
+  const staticMainHeading = slides[activeIndex]?.main_headig || '';
   const getColoredHeading = (mainHeading: string, slideHeading: string, slideIndex: number) => {
     const words = mainHeading.split(' ');
     const altruistIndex = words.findIndex(word => word.toLowerCase() === 'altruist');
   
     if (altruistIndex !== -1) {
-      const altruist = words[altruistIndex];
+      let altruist = words[altruistIndex];
       
       // Choose the character to color based on the slideIndex
       const characterToColor = slideIndex % altruist.length; // This will cycle through the characters of 'altruist'
@@ -85,12 +54,23 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
       }
     }).join(' ');
   };
-  
+  const handleSlideChange = (swiper: SwiperType) => {
+    setActiveIndex(swiper.realIndex);
+  };
 
   return (
     <section id="who-we-are" className="about-section py- px-0 pb-0">
       <div className="about-slider-containe slider-container unique_container container pb-">
-        <Swiper className='pb-0'
+        {/* Static main heading */}
+        <h1 
+          className="main-title text-start m-0 mb-3"
+          dangerouslySetInnerHTML={{ 
+            __html: getColoredHeading(staticMainHeading, slides[activeIndex]?.heading || '', activeIndex)
+          }}
+        />
+
+        <Swiper 
+          className='pb-0'
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={50}
           slidesPerView={1}
@@ -102,15 +82,10 @@ export default function AboutSlider({ slides }: { slides: AboutSlide[] }) {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
+          onSlideChange={handleSlideChange}
         >
           {slides?.map((slide, index) => (
             <SwiperSlide className='px-' key={index}>
-              <h1 
-                className="main-title text-start m-0 mb-3"
-                dangerouslySetInnerHTML={{ 
-                  __html: getColoredHeading(slide.main_headig, slide.heading, index) 
-                }}
-              />
               <div className="about-slid slidr_parnt_box px-0">
                 <div className="about-conten text-content">
                   <h2 className="about-heading scrolling_heading m-0">

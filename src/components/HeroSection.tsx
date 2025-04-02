@@ -12,11 +12,11 @@ export default async function HeroSection() {
       {quoteData?.herosection?.map((item: any, index: number) => (
         <div key={index} className="videoContainer">
           <video className="heroVideo" autoPlay loop muted playsInline>
-            <source src={item.videoUrl} type="video/mp4" />
+            <source src="/assets/videos/global-network-connection.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="textOverlay">
-            <p className="heroText">{item.text}</p>
+            {/* <p className="heroText">{item.text}</p> */}
           </div>
         </div>
       ))}
