@@ -1985,6 +1985,7 @@ body {
 .country-tag {
   color: #fff;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .description {
@@ -2295,7 +2296,7 @@ body {
 .counter-value {
   color: #ffffff;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -2345,8 +2346,8 @@ textarea,
 .form-select {
   padding: 0.8rem !important;
   border: none;
-  /* border-radius: 4px; */
-  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
   font-size: 1rem;
   width: 100%;
 }
@@ -2391,7 +2392,7 @@ input[type="checkbox"] {
   background-color: #0c8ce9;
   color: white;
   /* padding: 1rem 2rem; */
-  padding: 0.8vw 1.25vw;
+  padding: 12px 18px;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -2496,7 +2497,6 @@ textarea:focus {
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 1001;
 }
 
 .hamburger-line {
@@ -2550,7 +2550,6 @@ body.menu-open {
 }
 
 .social-link {
-  width: 30px;
   transition: background-color 0.3s ease;
 }
 
@@ -2902,6 +2901,8 @@ body.menu-open {
 
   .about-image {
     max-width: 80%;
+    display: block;
+    margin: auto;
   }
 }
 
@@ -2921,6 +2922,19 @@ body.menu-open {
   }
   .partner-name {
     font-size: 22px;
+  }
+  .counter_box > * {
+    width: calc(33.33% - 13.33px);
+  }
+  .slidr_parnt_box > * {
+    width: calc(50% - 1rem);
+    width: calc(50% - 20px);
+  }
+  .what_reach_work > .title {
+    width: 20.069vw;
+  }
+  .what_reach_work > *:nth-child(2) {
+    width: calc(100% - 20.069vw - 5.208vw);
   }
 }
 
@@ -3005,11 +3019,11 @@ body.menu-open {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.95);
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 24px;
     transition: right 0.3s ease;
-    padding: 2rem;
+    padding: 32px 20px 20px 20px;
+    border-top: 1px solid #FFFFFF33;
   }
 
   .nav-menu.active {
@@ -3017,7 +3031,8 @@ body.menu-open {
   }
 
   .nav-link {
-    font-size: 1.25rem;
+    font-size: 18px;
+    line-height: 150%;
   }
 
   .header-container {
@@ -3026,6 +3041,7 @@ body.menu-open {
 
   .logo-link {
     width: 28px;
+    z-index: 9;
   }
 
   .header .header-containe {
@@ -3061,11 +3077,12 @@ body.menu-open {
 #who-we-are .scrolling_heading {
   font-size: 45px;
 }
-#who-we-are .text-content {
+.text-content {
   gap: 40px;
 }
 .description {
   font-size: 18px;
+  line-height: 32px;
 }
 .title {
   font-size: 35px;
@@ -3076,14 +3093,14 @@ body.menu-open {
 }
 
 .services-paragraph.description:not(:first-child) {
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .technology-section .slider-container {
   padding: 40px 20px;
 }
 
-.text-content {
+.technology-section .text-content {
   gap: 30px;
 }
 
@@ -3091,38 +3108,78 @@ body.menu-open {
   font-size: 45px;
 }
 
+.slidr_parnt_box {
+  gap: 20px;
+}
+
+.technology-section .swiper-pagination-bullet {
+  width: 50px;
+  height: 8px;
+}
+.technology-section .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 80px;
+}
+.swiper-pagination {
+  bottom: 0px;
+}
+.what_reach_work {
+  gap: 30px;
+}
+.work-heading {
+  margin-bottom: 40px;
+}
+.unique_container {
+  padding: 40px 20px !important;
+}
+.partner-name {
+  font-size: 18px;
+}
+.partner_carousel .social-link {
+  width: 12px;
+  height: 12px;
+}
+.partner_carousel .social_icns {
+  gap: 9px;
+}
+.partner_carousel .row {
+  gap: 47px 0px;
+}
+.carousel-inner {
+  padding-bottom: 60px;
+}
+.unique_container.form-containe {
+  padding: 40px !important;
+}
+.contact-form {
+  width: 100%;
+}
+textarea {
+  min-height: 250px;
+}
+.footer .unique_container {
+  gap: 17.5px;
+  padding: 40px !important;
+}
+.social-links {
+  gap: 0px;
+  width: 100%;
+  justify-content: space-between;
+}
 }
 
 @media (min-width: 576px) {
-  .counter_box > * {
-    width: calc(33.33% - 13.33px);
-  }
-  .slidr_parnt_box > * {
-    width: calc(50% - 1rem);
-    width: calc(50% - 20px);
-  }
-  .what_reach_work > .title {
-    width: 20.069vw;
-  }
-  .what_reach_work > *:nth-child(2) {
-    width: calc(100% - 20.069vw - 5.208vw);
-  }
+
+ 
 
 }
 
 @media (max-width: 575px) {
-  .submit-button {
-    width: 100%;
-  }
  
   .partner_carousel .row {
     margin: 0 -5px;
   }
   .partner_carousel .row > * {
     padding: 0 5px;
-  }
-  .partner_carousel .social-link {
-    width: 3.5vw;
   }
 }
 
@@ -3137,9 +3194,6 @@ body.menu-open {
     max-width: 100%;
   }
 
-  .copyright {
-    font-size: 0.75rem;
-  }
 }
 
 @keyframes fadeInRight {
