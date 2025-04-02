@@ -1757,6 +1757,56 @@ body {
   opacity: 1;
 }
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+
+  .main-title {
+    font-size: 2.25rem;
+  }
+
+  .scrolling_heading {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-paragraph {
+    margin: 0 auto;
+  }
+
+  .about-image {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .scrolling_heading {
+    font-size: 2.5rem;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.75rem;
+  }
+
+  .scrolling_heading {
+    font-size: 2rem;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+}
+
 .route-navigation {
   display: flex;
   justify-content: center;
@@ -2068,7 +2118,10 @@ body {
   padding: 0.8rem 1.3rem;
   padding: 24px 31px;
   transition: transform 0.3s ease;
+  gap: 20.82px;
+
   gap: 0px !important;
+
 }
 
 .counter-item:hover {
@@ -2124,6 +2177,56 @@ body {
 }
 
 /* Responsive Design */
+@media (min-width: 576px) {
+  .counter_box > * {
+    width: calc(33.33% - 13.33px);
+  }
+}
+@media (max-width: 1024px) {
+  /* .counter-container {
+    padding: 0 1.5rem;
+  } */
+}
+
+@media (max-width: 768px) {
+  /* .counter-container:not(.counter-section) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  } */
+
+  .counter-value {
+    font-size: 24px;
+  }
+
+  .counter-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .counter-container {
+    grid-template-columns: 1fr;
+  } */
+
+  /* .counter-section:not(.counter-container) {
+    padding: 3rem 0;
+  } */
+
+  .counter-item {
+    padding: 1.5rem;
+  }
+
+  .counter-icon {
+    /* width: 40px;
+    height: 40px; */
+  }
+
+  .counter-icon img {
+    /* width: 20px;
+    height: 20px; */
+  }
+}
+
 
 /* counter css  */
 
@@ -2446,6 +2549,10 @@ body.menu-open {
 .slick-initialized .slick-slide {
   flex-direction: column;
 }
+
+.contact-form{
+  width: 280px;
+}
 .contact-form {
   width: 290px;
 }
@@ -2501,8 +2608,14 @@ body.menu-open {
 .carousel-indicators {
   gap: 16px;
 }
+
+.partner_carousel .social_icns{
+  gap: 9px;
+  /* gap: 0.469vw; */
+}
 .partner_carousel .social_icns {
   gap: 0.469vw;
+/* >>>>>>>>> Temporary merge branch 2 */
 }
 .technology-section .slider_hover_image {
   width: 100%;
@@ -2757,6 +2870,47 @@ body.menu-open {
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 992px) {
+  .about-paragraph {
+    margin: 0 auto;
+  }
+
+  .about-image {
+    max-width: 80%;
+  }
+}
+
+@media(min-width:1400px){
+  .unique_container.container {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 100%;
+  }
+  .header > .unique_container{
+    min-height: 106.26px;
+  }
+}
+@media (max-width: 991px) {
+ 
+  .slider_hover_image {
+    width: 100%;
+  }
+  .partner_carousel .social-link {
+    width: 3vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .box {
+    margin-top: 100.94px;
+
+  }
+  .partner-name {
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 768px) {
   .route-navigation {
     flex-wrap: wrap;
@@ -2822,6 +2976,12 @@ body.menu-open {
   }
 }
 
+@media(min-width:1450px){
+  .slider_hover_image{
+    width: 76%;
+  }
+}
+
 @media (max-width: 767px) {
   .hamburger {
     display: flex;
@@ -2844,8 +3004,8 @@ body.menu-open {
     align-items: center;
     gap: 24px;
     transition: right 0.3s ease;
-    padding: 32px 20px 20px 20px;
-    border-top: 1px solid #FFFFFF33;
+    padding: 2rem;
+  }
   }
 
   .nav-menu.active {
@@ -2909,9 +3069,16 @@ body.menu-open {
 .title {
   font-size: 35px;
 }
+
+@media(max-width:1279px){
+  .description{
+    font-size: 1rem;
+  }
+
 #what-we-do .what_reach_work {
   padding: 40px 20px;
   gap: 30px;
+
 }
 
 .services-paragraph.description:not(:first-child) {
@@ -2975,22 +3142,15 @@ body.menu-open {
 .contact-form {
   width: 100%;
 }
-textarea {
-  min-height: 250px;
-}
-.footer .unique_container {
-  gap: 17.5px;
-  padding: 40px !important;
-}
-.social-links {
-  gap: 0px;
-  width: 100%;
-  justify-content: space-between;
+
+.partner_carousel .social-link {
+  width: 3.5vw;
 }
 .counter-icon img {
   width: 40.95px;
 }
 }
+/*--x-25/03/2025-x--*/
 
 
 
@@ -3026,250 +3186,5 @@ textarea {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-
-
-
-
-
-
-
-
-/* @media (min-width:1400px){
-  
-} */
-@media (width<=991px) {
-  .div {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div2 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .img2 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div3 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div5 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div7 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div9 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div11 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .wearealtruistworld {
-    max-width: 100%;
-    font-size: 40px;
-  }
-}
-@media (width<=991px) {
-  .frame {
-    margin-top: 40px;
-  }
-}
-@media (width<=991px) {
-  .div12 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .action {
-    max-width: 100%;
-    font-size: 40px;
-  }
-}
-@media (width<=991px) {
-  .webelieveintakinginitiativeandmakingdecisionsthatdriverealresultsItsnotjustaboutplanningitsaboutrollingupoursleevesandgettingthingsdoneByactingdecisivelyandproactivelyweempowereachothertotacklechallengesheadOnandseizeopportunitieswithouthesitation {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div13 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .whatWeDo5 {
-    font-size: 40px;
-  }
-}
-@media (width<=991px) {
-  .altruistisaforProfitdiversifiedglobalenterpriseofferingacomprehensivesuiteofservicesacrossmultipleindustriesandcontinentsincludingApacEuropeAfricaandtheAmericasWespecialiseinKnowledgeProcessOutsourcingKpoBusinessProcessOutsourcingBpoTechnologyMarketingAdvertisingLastMileDeliveryandHospitalitytailoredtospecificmarketsAtourcorewepractisewelfareofhumanitythroughgenerationofjobsprovidinglivlihoodtothatstratumofsocietywhofinditdifficulttonavigateorsustaininaneraofAIautomationandknowledgeobsolescenceandby2030Ourvisionistoserve100000PeopleClientsandemployeesglobally {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div14 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .frame2 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div15 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div16 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div17 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .tagline {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .heading {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 52px;
-  }
-}
-@media (width<=991px) {
-  .amobileValueAddedServicesVaScompanyAltruistTechnologiesisaleadingprovideroftelecomsolutionsinover50Countriesservingmorethan100TelecomoperatorsandenterprisesacrossAsiaAfricaEuropeandtheMiddleEastComprising11Companiesandateamofover15000ProfessionalsoperatingacrossvariouscountriesAltruistTechnologiesoffersacomprehensivesuiteoftelecomproductsandservicesincludingcontentBasedvalueAddedservicescoretelecomproductsCPaaSplatformsdigitalVmScontestingsolutionsgamingbulkmessagingandmore {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div18 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .img9 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .button2 {
-    margin-top: 40px;
-  }
-}
-@media (width<=991px) {
-  .div24 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .ourWork {
-    font-size: 40px;
-  }
-}
-@media (width<=991px) {
-  .fromFmcGtoFinTechwevedoneitallWhetheritsfastMovingconsumergoodscuttingEdgeFinTechorrevolutionarystartupsourexpertisespansacrosssectorsdrivingimpactandinnovation {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .frame3 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div25 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div34 {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-@media (width<=991px) {
-  .navbutton {
-    margin-top: 40px;
-  }
-}
-@media (width<=991px) {
-  .div51 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .reachOut {
-    font-size: 40px;
-  }
-}
-@media (width<=991px) {
-  .whetheryourelookingtonavigateorsetupacomplextechnologysolutionamplifyyourbrandorlaunchsomethingextraordinarywereheretomakeithappen {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .frame4 {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (width<=991px) {
-  .div52 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div53 {
-    max-width: 100%;
-  }
-}
-@media (width<=991px) {
-  .div54 {
-    max-width: 100%;
   }
 }
