@@ -3,9 +3,9 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import fb from "../../public/assets/images/Facebook.png";
+import fb from "../../public/assets/images/X.png";
 import linkedin from "../../public/assets/images/Linkedin.png";
-import x from "../../public/assets/images/X.png";
+import x from "../../public/assets/images/global.png";
 interface ClientData1 {
   partnerLogo: string;
   name: string;
@@ -44,8 +44,8 @@ export default function ClientLogos({ clients }: { clients: ClientData1[] }) {
                         <img src={client.partnerLogo} className="d-block w-100" alt={client.name} />
                         <h3 className="partner-name my-md-2 my-2">{client.name}</h3>
                         <div className='d-flex flex-wrap gap-md- gap- align-items-center justify-content-center social_icns'>
+                        <img className="social-link img-fluid d-block" src={linkedin.src} />
                           <img className="social-link img-fluid d-block" src={fb.src} />
-                          <img className="social-link img-fluid d-block" src={linkedin.src} />
                           <img className="social-link img-fluid d-block" src={x.src} />
                         </div>
                       </div>
