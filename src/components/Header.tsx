@@ -28,7 +28,8 @@ const Header: React.FC = () => {
           {/* <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
           <span className="hamburger-line"></span> */}
-          <img src="/assets/icons/hamburger.svg" alt="hamburger" />
+          <img src="/assets/icons/hamburger.svg" className="menu_icn" alt="hamburger" />
+          <img src="/assets/images/close_icon.png" className="close_icn" alt="hamburger" />
         </button>
 
         {/* Navigation Menu */}
