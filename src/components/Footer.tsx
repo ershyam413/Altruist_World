@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer border-0">
       <div className="footer-containe unique_container container d-flex flex-column align-items-center gap-">
-        <div className="social-links">
+        <div className="social-links justify-content-center">
           <a href="#" className="social-link" aria-label="Facebook">
             <img
               src="/assets/images/Facebook.png"
