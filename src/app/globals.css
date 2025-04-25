@@ -866,6 +866,7 @@ button.tab-arrow {
   }
   .slidr_parnt_box > * {
     width: calc(50% - 20px);
+    gap: 27.5px;
   }
   .what_reach_work > .title {
     width: 20.069vw;
@@ -1199,7 +1200,7 @@ button.tab-arrow {
   width: 40.95px;
   }
 }
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .route-button {
     width: 50%;
   }
