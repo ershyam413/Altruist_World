@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             />
           </a>
         </div>
-        <p className="copyright">© 2025 Altruist India. All rights reserved.</p>
+        <p className="copyright">© 2025 Altruist. All rights reserved.</p>
       </div>
     </footer>
   );
